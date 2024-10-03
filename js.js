@@ -66,3 +66,49 @@ switch(weekDay){
     default:
         console.log("Invalid value");
 }
+
+//bucle
+//while
+
+const cartItems =[
+    {
+        name:"Iphone 16",
+        price:1700,
+        curency:"$",
+        amount:1
+    },
+    {
+        name:"Protector sleeve",
+        price:100,
+        curency:"$",
+        amount:3
+    },
+    {
+        name:"Apple sticker",
+        price:21.99,
+        curency:"$",
+        amount:4
+    }
+]
+
+let totalPrice = 0;
+let productIndex = 0;
+while(productIndex < cartItems.length){
+    let product = cartItems[productIndex];
+      totalPrice += product.price * product.amount;
+      productIndex++;
+}
+
+console.log("Your cart total:",totalPrice,cartItems[0].curency);
+
+//do while loop
+
+let n =4;
+let currentNumber = 0;
+
+do{
+    currentNumber++;
+    console.log(currentNumber);
+}while(currentNumber<n);
+
+    
